@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Créditos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tela Inicial -->
+    <div id="telaInicial">
+        <img src="ccmpr.png" alt="Logo do Colégio" id="logoInicial">
+        <h1>Bem-vindo ao Sistema de Créditos!</h1>
+        <p>Acompanhe seus créditos de forma fácil e rápida.</p>
+        <button id="btnEntrar" class="btnEntrarEstilizado">Entrar</button>
+    </div>
+
+    <!-- Tela Lista de Professores -->
+    <div id="listaProfessores" style="display:none;">
+        <h2>Lista de Professores</h2>
+        <div class="lista-professores">
+            <ul id="professores">
+                <li class="professor-card">
+                    <div class="professor-info">
+                        <span class="nomeProfessor">Alisson Guilherme</span>
+                        <span class="saldoCreditos">8.50</span> <!-- Saldo de Créditos -->
+                    </div>
+                </li>
+                <li class="professor-card">
+                    <div class="professor-info">
+                        <span class="nomeProfessor">Allan</span>
+                        <span class="saldoCreditos">5.50</span> <!-- Saldo de Créditos -->
+                    </div>
+                </li>
+                <li class="professor-card">
+                    <div class="professor-info">
+                        <span class="nomeProfessor">Beatriz</span>
+                        <span class="saldoCreditos">3.25</span> <!-- Saldo de Créditos -->
+                    </div>
+                </li>
+                <!-- Outros professores podem ser listados aqui -->
+            </ul>
+        </div>
+        <button id="btnVoltarParaInicial">Voltar para Tela Inicial</button>
+    </div>
+
+    <!-- Tela Perfil do Professor -->
+    <div id="perfilProfessor" style="display:none;">
+        <h3 id="nomeProfessor"></h3>
+        <p>Saldo de Créditos: <span id="saldoCreditos"></span></p>
+        <div class="creditoContainer">
+            <button id="btnAdicionar" class="btnAction">+1 Crédito</button>
+            <button id="btnRemover" class="btnAction">-1 Crédito</button>
+        </div>
+        <p id="statusMessage" style="display:none;"></p>
+        <button id="btnVoltarLista">Voltar para Lista de Professores</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
